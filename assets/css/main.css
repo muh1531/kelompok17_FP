@@ -11,12 +11,36 @@ body {
 	justify-content: center;
 }
 
-li > img {
+li>img {
 	height: 60px;
 	width: 150px;
 	margin: 0 25px 0 25px;
 }
-li > a {
+
+li>a {
 	font-size: 20px;
 	margin: 0 10px 0 10px;
+}
+
+#about {
+	background-color: #1e92af;
+	height: 315px;
+	width: 560px;
+	margin: 5px 0 30px 0;
+
+}
+
+#about>p {
+	margin: 10px;
+	padding: 10px;
+}
+
+#left-info {
+	background-color: antiquewhite;
+	height: 500px;
+}
+
+#right-info {
+	background-color: pink;
+	height: 500px;
 }
