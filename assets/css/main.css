@@ -1,0 +1,22 @@
+body {
+	background-color: #057c5e;
+}
+
+.mainnav {
+	background: #116175;
+
+	background: -webkit-linear-gradient(to right, #116175, #1e92af, #116175);
+
+	background: linear-gradient(to right, #116175, #1e92af, #116175);
+	justify-content: center;
+}
+
+li > img {
+	height: 60px;
+	width: 150px;
+	margin: 0 25px 0 25px;
+}
+li > a {
+	font-size: 20px;
+	margin: 0 10px 0 10px;
+}
