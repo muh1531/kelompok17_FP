@@ -15,73 +15,84 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light mainnav">
-    <ul class="navbar-nav">
-      <li class="nav-item active ">
-        <a class="nav-link text-light" href="">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-light" href="">Media</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-light" href="">Guest</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-light disabled" href="#">Competition</a>
-      </li>
-      <li class="nav-brand">
-        <img src="./assets/img/logo.png" alt="">
-      </li>
-      <li class="nav-item active ">
-        <a class="nav-link text-light" href="">Talkshow</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-light" href="">Guide</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-light" href="">FAQ</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-light disabled" href="#">Join Us</a>
-      </li>
-      <!-- Button trigger modal -->
-      <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
-        <i class="fas fa-search" aria-hidden="true"></i>
+<nav class="navbar navbar-expand-sm navbar-light bg-light mainnav" data-toggle="affix">
+  <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
       </button>
-
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Type something you want to know!</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <!-- Search form -->
-              <form class="form-inline ">
-                <input class="form-control form-control-md mr-3 w-75" type="text" placeholder="Search"
-                  aria-label="Search">
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-success">Search</button>
+      <div class="collapse navbar-collapse" id="navbarsExample11">
+        <ul class="navbar-nav">
+          <li class="nav-item active ">
+            <a class="nav-link text-light" href="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="">Media</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="">Guest</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light " href="#">Competition</a>
+          </li>
+          <li class="nav-brand d-none d-sm-block d-md-block ">
+            <img src="./assets/img/logo.png" alt="">
+          </li>
+          <li class="nav-item active ">
+            <a class="nav-link text-light" href="">Talkshow</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="">Guide</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light " href="#">Join Us</a>
+          </li>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
+            <i class="fas fa-search" aria-hidden="true"></i>
+          </button>
+    
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Type something you want to know!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!-- Search form -->
+                  <form class="form-inline ">
+                    <input class="form-control form-control-md mr-3 w-75" type="text" placeholder="Search"
+                      aria-label="Search">
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-success">Search</button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </ul>
       </div>
-    </ul>
-  </nav>
+  </div>
+</nav>
 
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
-        <div class="image">
+        <!-- <div class="image">
           <img src="./assets/img/logo.png" height="600px" width="100%" alt="">
+        </div> -->
+        <div class="jumbotron text-center">
+          <h1>My First Bootstrap Page</h1>
+          <p>Resize this responsive page to see the effect!</p>
         </div>
       </div>
     </div>
@@ -108,7 +119,7 @@
       </div>
       <div class="col-md-6 offset-3 d-flex justify-content-center">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/GGruiHg1xJE" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          allow="accelerometer;encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
     <br>
