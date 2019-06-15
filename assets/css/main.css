@@ -1,13 +1,13 @@
 body {
-	background-color: #057c5e;
+	background-color: #4ac9a9;
 }
 
 .mainnav {
-	background: #116175;
+	background: #044731;
 
-	background: -webkit-linear-gradient(to right, #116175, #1e92af, #116175);
+	background: -webkit-linear-gradient(to right, #115a48, #268870, #115a48);
 
-	background: linear-gradient(to right, #116175, #1e92af, #116175);
+	background: linear-gradient(to right, #115a48, #268870, #115a48);
 }
 
 li > img {
@@ -19,6 +19,7 @@ li > img {
 li > a {
 	font-size: 20px;
 	margin: 0 10px 0 10px;
+	color: red;
 }
 
 #about {
