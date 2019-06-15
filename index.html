@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Pekan Budaya Indoensia</title>
-  <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css"> -->
+  <link rel="stylesheet"
+    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+    integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="./assets/fontawesome/css/fontawesome.css">
   <link rel="stylesheet" href="./assets/fontawesome/css/brands.css">
@@ -56,17 +59,104 @@
           <a class="nav-link text-light" href="#">Join Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#">sdasd</a>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            <i class="fas fa-search"></i>
+          </button>
         </li>
       </ul>
     </div>
   </nav>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Search Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="searchInput" class="bmd-label-floating">Search <i class="fas fa-search"></i></label>
+              <input type="email" class="form-control" id="searchInput">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <span class="form-group bmd-form-group align-items-end">
+            <!-- needed to match padding for floating labels -->
+            <button type="submit" class="btn btn-primary">Search</button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <script src="./assets/js/jquery-3.4.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  <!-- jumbotron -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Fluid jumbotron</h1>
+      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    </div>
+  </div>
+
+  <!-- content -->
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <h1>About</h1>
+      <div class="w-100"></div>
+      <div class="col-6" id="about">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, repellat laborum cum voluptate cumque
+          facilis. Repellat vel animi, dolor mollitia, quibusdam quidem totam, magni illo sapiente molestiae minus modi
+          eos?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, repellat laborum cum voluptate cumque
+          facilis. Repellat vel animi, dolor mollitia, quibusdam quidem totam, magni illo sapiente molestiae minus modi
+          eos?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, repellat laborum cum voluptate cumque
+          facilis. Repellat vel animi, dolor mollitia, quibusdam quidem totam, magni illo sapiente molestiae minus modi
+          eos?</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <h1>Teaser</h1>
+      <div class="w-100"></div>
+      <div class="col-6 ">
+        <iframe width="660" height="315" src="https://www.youtube.com/embed/cMPEd8m79Hw" frameborder="0"
+          allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="row">
+      <div class="col-6">
+        <div id="left-info"></div>
+      </div>
+      <div class="col-6">
+        <div id="right-info"></div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- javascript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
+    integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+    integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous">
   </script>
-  <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+    integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous">
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('body').bootstrapMaterialDesign();
+    });
+  </script>
 </body>
 
 </html>
