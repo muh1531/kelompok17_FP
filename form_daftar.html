@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pekan Budaya Indonesia</title>
-    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="./assets/fontawesome/css/solid.min.css">
@@ -37,18 +38,25 @@
             <div class="col-md-6 mx-auto">
 
                 <form class="form-group" action="">
-                    <label for="">sdasd</label>
-                    <input class="form-control" type="text">
-
-                    <label for="">sfasd</label>
-                    <input class="form-control" type="text">
-
-                    <label for="">sadasd</label>
-                    <input class="form-control" type="text">
-
-                    <label for="">sdasd</label>
-                    <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
-                    <br>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
                     <div class="justify-content-end">
                         <button class="btn btn-primary">submit</button>
                     </div>
@@ -66,7 +74,9 @@
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
     <script src="./assets/js/angular.min.js"></script>
-    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- <script src="./assets/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
 
 </body>
 
