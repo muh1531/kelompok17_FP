@@ -43,12 +43,19 @@ li>a {
 	padding: 10px;
 }
 
-#left-info {
-	background-color: antiquewhite;
-	height: 500px;
+#medsos-pnl {
+	font-size: 30px;
+	padding: 5px;
 }
 
-#right-info {
-	background-color: pink;
-	height: 500px;
+#medsos-pnl i {
+	margin: 5px;
+}
+
+#footer-pnl {
+	color: #1e92af;
+}
+
+#footer-pnl h3 {
+	color: #fff;
 }
