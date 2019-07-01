@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="">
 
 <head>
    <meta charset="UTF-8">
@@ -37,43 +37,45 @@
                <div class="form-row">
                   <div class="form-group col-md-6">
                      <label for="inputEmail4">Nama Depan</label>
-                     <input type="text" class="form-control" id="namaDepan" placeholder="Nama Depan">
+                     <input type="text" class="form-control" id="namaDepan" placeholder="Nama Depan"
+                        ng-model="firstname" required>
                   </div>
 
                   <div class="form-group col-md-6">
                      <label for="inputEmail4">Nama Belakang</label>
-                     <input type="text" class="form-control" id="namaBelakang" placeholder="Nama Belakang">
+                     <input type="text" class="form-control" id="namaBelakang" placeholder="Nama Belakang"
+                        ng-model="lastname" required>
                   </div>
                </div>
 
                <div class="form-group">
                   <label for="inputAddress">Alamat</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="Alamat">
+                  <textarea type="text" class="form-control" id="inputAddress" placeholder="Alamat" ng-model="alamat"
+                     required></textarea>
                </div>
 
                <div class="form-group">
                   <label for="kompetisi">Kompetisi</label>
-                  <select id="kompetisi" class="form-control">
-                     <option selected>Choose...</option>
-                     <option>...</option>
+                  <select name="kompetisi" id="kompetisi" class="form-control" ng-model="data.kompetisi" required>
+                     <option selected>pilih kompetisi...</option>
+                     <option value="{{data.kompetisi1}}">kompetisi</option>
+                     <option value="Lomba Lagu Daerah">Lomba Lagu Daerah</option>
                   </select>
+                  <br>
                </div>
 
                <div class="form-row">
-                  <div class="form-group col-md-6">
-                     <label for="inputCity">City</label>
-                     <input type="text" class="form-control" id="inputCity">
+                  <div class="form-group col-md-5">
+                     <label for="inputCity">kabupaten/kota</label>
+                     <input type="text" class="form-control" id="inputCity" ng-model="kab" required>
                   </div>
-                  <div class="form-group col-md-4">
-                     <label for="inputState">State</label>
-                     <select id="inputState" class="form-control">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                     </select>
+                  <div class="form-group col-md-5">
+                     <label for="inputCity">provinsi</label>
+                     <input type="text" class="form-control" id="inputPorvinsi" ng-model="provinsi" required>
                   </div>
                   <div class="form-group col-md-2">
-                     <label for="inputZip">Zip</label>
-                     <input type="text" class="form-control" id="inputZip">
+                     <label for="inputZip">kode pos</label>
+                     <input type="text" class="form-control" id="inputZip" ng-model="kdpos" required>
                   </div>
                </div>
 
@@ -90,12 +92,71 @@
                   <div class="col-sm-2">
                      <button type="submit" class="btn btn-info" id="btnSubmit">Daftar</button>
                   </div>
+
+                  <!-- Button trigger modal -->
                   <div class="offset-8 col-sm-2">
-                     <button type="submit" class="btn btn-primary" id="btnPreview">Preview</button>
+                     <button type="submit" class="btn btn-primary" id="btnPreview" data-toggle="modal"
+                        data-target="#exampleModalCenter">Preview</button>
                   </div>
                </div>
 
             </form>
+            <!-- end form panel -->
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+               aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                        </button>
+                     </div>
+                     <div class="modal-body">
+                        <div class="form-row">
+                           <div class="form-group col-md-6">
+                              <label for="inputEmail4">Nama Depan</label>
+                              <h5 ng-bind="firstname"></h5>
+                           </div>
+
+                           <div class="form-group col-md-6">
+                              <label for="inputEmail4">Nama Belakang</label>
+                              <h5 ng-bind="lastname"></h5>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label for="inputAddress">Alamat</label>
+                           <h5 ng-bind="alamat"></h5>
+                        </div>
+
+                        <div class="form-group">
+                           <label>Kompetisi</label>
+                           <h5>{{data.kompetisi}}</h5> </tt>
+                        </div>
+                        <div class="form-row">
+                           <div class="form-group col-md-5">
+                              <label for="inputCity">kabupaten/kota</label>
+                              <h5 ng-bind="kab"></h5>
+                           </div>
+                           <div class="form-group col-md-5">
+                              <label for="inputCity">provinsi</label>
+                              <h5 ng-bind="provinsi"></h5>
+                           </div>
+                           <div class="form-group col-md-2">
+                              <label for="inputZip">kode pos</label>
+                              <h5 ng-bind="kdpos"></h5>
+                           </div>
+                        </div>
+
+                     </div>
+                     <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
 
          </div>
       </div>

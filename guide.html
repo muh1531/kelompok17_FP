@@ -12,6 +12,14 @@
     <link rel="stylesheet" href="./assets/fontawesome/css/solid.min.css">
     <link rel="stylesheet" href="./assets/fontawesome/css/brands.min.css">
 
+    <style>
+        .map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+    <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
+
 </head>
 
 <body>
@@ -22,7 +30,7 @@
     <div class="banner">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center text-light">
                     <h1>Pekan Budaya Indoensia</h1>
                     <h4>GUIDE</h4>
                     <p class="lead">Cintai Produk Produk Lokal.</p>
@@ -32,21 +40,67 @@
     </div>
     <!-- end jumbotron -->
 
-    <!-- Page Content -->
+    <!-- tittle -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <br>
+            <div class="col-sm-8 text-dark text-center">
+                <br>
+                <h3>Lokasi</h3>
+                <div class="w-100"></div>
+                <img src="./assets/img/icon/kipas2.png" style="height: 20px; width:150px;" alt="">
+                <br><br>
+            </div>
+        </div>
+    </div>
+    <!-- end tittle -->
+
+    <!-- maps -->
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-8">
+                    <h2 class="text-center">Jogja Expo Center</h2>
+
+                    <div id="map" class="map"></div>
+                    <script type="text/javascript">
+                        var map = new ol.Map({
+                            target: 'map',
+                            layers: [
+                                new ol.layer.Tile({
+                                    source: new ol.source.OSM()
+                                })
+                            ],
+                            view: new ol.View({
+                                center: ol.proj.fromLonLat([110.403970, -7.7995909]),
+                                zoom: 18
+                            })
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- < --end maps--> -->
+
+    <!-- < !--Page Content--> -->
+
     <div class="container-fluid">
 
 
-        <div ng-include="" src="'./partial/footer.html'"></div>
+        <div ng - include="" src="'./partial/footer.html'">
+        </div>
 
-    </div>
-
-    <!-- javascript -->
-    <script src="./assets/js/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="./assets/js/angular.min.js"></script>
-    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+        < !--javascript-->
+            <script src="./assets/js/jquery-3.4.1.min.js">
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous">
+            </script>
+            <script src="./assets/js/angular.min.js"></script>
+            <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>

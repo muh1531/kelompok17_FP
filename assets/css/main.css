@@ -2,6 +2,39 @@ body {
 	background-color: #79cab6;
 }
 
+.bg-grey,
+.text-gery {
+	background-color: #6d6d6a;
+	color: #6d6d6a;
+}
+
+.bg-green,
+.text-green {
+	background-color: #79a9ab;
+	color: #79a9ab;
+}
+
+.bg-blue,
+.text-blue {
+	background-color: #79cab6;
+	color: #79cab6;
+}
+
+.bg-bronze,
+.text-bronze {
+	background-color: #d8be91;
+	color: #d8be91;
+}
+
+.bg-sfpink,
+.text-sfpink {
+	background-color: #f7eecb;
+	color: #f7eecb;
+}
+
+
+
+
 .mainnav {
 	background: #044731;
 
