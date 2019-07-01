@@ -23,7 +23,7 @@
    <div class="jumbotron jumbotron-fluid banner text-center text-light">
       <div class="container">
          <h1 class="display-4">Formulir Pendaftaran</h1>
-         <p class="lead">Isi formulir berikut untuk berpartisipasi dalam kompetisi Pekan Budaya Indonesia</p>
+         <p class="lead">Isi formulir berikut untuk berpartisipasi dalam Pekan Budaya Indonesia</p>
       </div>
    </div>
    <!-- end jumbotron -->
@@ -57,8 +57,8 @@
                <div class="form-group">
                   <label for="kompetisi">Kompetisi</label>
                   <select name="kompetisi" id="kompetisi" class="form-control" ng-model="data.kompetisi" required>
-                     <option selected>pilih kompetisi...</option>
-                     <option value="{{data.kompetisi1}}">kompetisi</option>
+                     <option value="{{data.kompetisi1}}">pilih kompetisi...</option>
+                     <option value="Kompetisi ">kompetisi</option>
                      <option value="Lomba Lagu Daerah">Lomba Lagu Daerah</option>
                   </select>
                   <br>
@@ -79,6 +79,7 @@
                   </div>
                </div>
 
+
                <div class="form-group">
                   <div class="form-check">
                      <input class="form-check-input" type="checkbox" id="gridCheck">
@@ -93,8 +94,16 @@
                      <button type="submit" class="btn btn-info" id="btnSubmit">Daftar</button>
                   </div>
 
+                  <div class="offset-1 col-sm-3">
+                     <form action="?" method="POST">
+                        <div class="g-recaptcha" data-sitekey="6LeUg6sUAAAAAJ45bc1SbivVgQ2KSHQ_TcczMr3H"></div>
+                        <br />
+
+                     </form>
+
+                  </div>
                   <!-- Button trigger modal -->
-                  <div class="offset-8 col-sm-2">
+                  <div class="offset-4  col-sm-2">
                      <button type="submit" class="btn btn-primary" id="btnPreview" data-toggle="modal"
                         data-target="#exampleModalCenter">Preview</button>
                   </div>
@@ -108,13 +117,14 @@
                <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                        <h3>FORM PREVIEW</h3>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                            <span aria-hidden="true">&times;</span>
                         </button>
                      </div>
                      <div class="modal-body">
                         <div class="form-row">
+
                            <div class="form-group col-md-6">
                               <label for="inputEmail4">Nama Depan</label>
                               <h5 ng-bind="firstname"></h5>
@@ -127,7 +137,6 @@
                         </div>
                         <div class="form-group">
                            <label for="inputAddress">Alamat</label>
-                           <h5 ng-bind="alamat"></h5>
                         </div>
 
                         <div class="form-group">
@@ -170,6 +179,7 @@
 
 
    <!-- javascript -->
+   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
    <script src="./assets/js/jquery-3.4.1.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
